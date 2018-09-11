@@ -5,7 +5,7 @@ using namespace std;
 class sell_info
 {
 public:
-    sell_info(string name):ProductName(name)
+    sell_info(string name):ProductName(name),data(5)
     {}
     void Rose()
     {
@@ -26,6 +26,7 @@ public:
     static int nums;
 protected:
     string ProductName;
+    int data;
 private:
 
 };
