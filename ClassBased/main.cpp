@@ -4,9 +4,13 @@ using namespace std;
 class D
 {
 public:
+    D()
+    {
+        show();
+    }
     void show()
     {
-         cout << "D:show" << &this->ID<< endl;
+         cout << "D:show " << &this->ID<< endl;
     }
 protected:
     int ID = 1000;
@@ -14,22 +18,30 @@ private:
 
 };
 
-class B:public D
+class B:virtual public D
 {
 public:
+    B()
+    {
+        show();
+    }
     void show()
     {
-         cout << "B:show" << &this->ID<< endl;
+         cout << "B:show " << &this->ID<< endl;
     }
 protected:
     int ID = 1001;
 };
-class C:public D
+class C:virtual public D
 {
 public:
+    C()
+    {
+        show();
+    }
     void show()
     {
-         cout << "C:show" << &this->ID<< endl;
+         cout << "C:show " << &this->ID<< endl;
     }
 protected:
     int ID = 1002;
@@ -37,9 +49,13 @@ protected:
 class A:public B,public C
 {
 public:
+    A()
+    {
+        show();
+    }
     void show()
     {
-         cout << "A:show" << &this->ID<< endl;
+         cout << "A:show " << B::ID<< endl;
     }
 protected:
     int ID = 1003;
@@ -50,7 +66,9 @@ int main(int argc, char *argv[])
 {
     A jack;
     cout << sizeof(jack) << endl;
-    jack.show();
+//    jack.show();
+//    jack.show();
+//    jack.show();
 
     return 0;
 }
