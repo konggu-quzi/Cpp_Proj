@@ -1,0 +1,42 @@
+编码格式转换
+https://blog.csdn.net/chary8088/article/details/21226375
+IP地址上网连接
+https://blog.csdn.net/leaf_J/article/details/79302396
+编码转换
+http://www.mytju.com/classcode/tools/encode_gb2312.asp
+字库
+http://www.font5.com.cn/zitixiazai/1/859.html
+本地文件上传到Linux服务器的几种方法
+http://blog.51cto.com/superw/1943250
+《口袋妖怪ORAS》宝石复刻全神兽捕捉图文攻略
+http://www.dianwannan.com/pmhlbs/3506/
+深入理解Linux内核(完整版)-笔记
+https://blog.csdn.net/magaiou/article/details/80322133
+c++设计模式(介绍)
+https://www.cnblogs.com/FG123/p/5046649.html
+c++设计模式(实例+介绍)
+https://blog.csdn.net/column/details/design.html
+面试毒瘤 之 反转二叉树
+https://www.cnblogs.com/wintersoft/p/4676124.html
+反转二叉树--递归和非递归
+https://blog.csdn.net/suibianshen2012/article/details/52068332
+
+
+【面经汇总】2018校招面经汇总贴（持续更新）
+https://www.nowcoder.com/discuss/53246
+
+CVTE 面经：
+CVTE校招嵌入式经历 
+https://blog.csdn.net/bnb6626405/article/details/52562593
+CVTE校招面经(已拿offer)
+https://blog.csdn.net/hacker00011000/article/details/52535610
+CVTE嵌入式三面面经（8.23更新）
+https://www.nowcoder.com/discuss/90250
+好未来(已拿offer)+ CVTE(3面通过)
+https://blog.csdn.net/u014365862/article/details/52541419
+2017CVTE嵌入式研发岗实习生面经
+https://blog.csdn.net/jiongpo_WS/article/details/68948154
+2018实习生-CVTE嵌入式软件工程师-面试过程（不含题目）
+https://blog.csdn.net/bangdingshouji/article/details/68066640
+CVTE2018秋招（嵌入式开发）
+https://blog.csdn.net/bangdingshouji/article/details/78069532
