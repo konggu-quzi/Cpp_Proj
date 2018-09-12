@@ -20,6 +20,8 @@ https://blog.csdn.net/column/details/design.html
 https://www.cnblogs.com/wintersoft/p/4676124.html
 反转二叉树--递归和非递归
 https://blog.csdn.net/suibianshen2012/article/details/52068332
+git提交代码时遇到代码库有更新以及本地有更新的解决方法
+https://blog.csdn.net/wowoniuzailushang/article/details/78517744
 
 
 【面经汇总】2018校招面经汇总贴（持续更新）
