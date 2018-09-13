@@ -22,7 +22,8 @@ https://www.cnblogs.com/wintersoft/p/4676124.html
 https://blog.csdn.net/suibianshen2012/article/details/52068332
 git提交代码时遇到代码库有更新以及本地有更新的解决方法
 https://blog.csdn.net/wowoniuzailushang/article/details/78517744
-
+ARM处理器7种工作模式
+https://blog.csdn.net/xiaolangyangyang/article/details/51768462
 
 【面经汇总】2018校招面经汇总贴（持续更新）
 https://www.nowcoder.com/discuss/53246
