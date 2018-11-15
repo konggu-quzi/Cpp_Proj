@@ -1,11 +1,13 @@
 /*
+ *
  *排序算法汇总（C/C++实现）
  */
+#include <iostream>
 #include <cstdio>
 #include <cstring>
 //#define swap(x,y){x^=y;y^=x;x^=y;}
 #define swap(x,y){int temp=x;x=y;y=temp;}
-
+using namespace std;
 const int N = 10;
 
 void pt(int *a,int s,int n){
@@ -107,13 +109,27 @@ void heapSort(int *a,int n){
     }
 }
 
+class foo {
+public:
+foo(){};
+};
+class boo : public foo {
+boo() : foo() {};
+};
+
 int main(){
     //printf("Hello world!\n");
     int a[N]={2,1,-1,123,0,1,21,7,-10,1};
     int b[N+1]={-999,2,1,-1,123,0,1,21,7,-10,1};
     int T[N];
     int c;
-    int & const cc = c;
+
+    int aa = 0x80000000;//;0x80000000
+
+    cout << sizeof  aa <<endl;
+    cout << aa <<endl;
+//    cout << hex << aa <<endl;
+//    int & const cc = c;
     printf("请选择一种排序算法：\n 1.选择排序\n 2.冒泡排序\n 3.插入排序\n 4.希尔排序\n 5.归并排序\n 6.快速排序\n 7.堆排序\n ----> ");
     scanf("%d",&c);
     switch(c){

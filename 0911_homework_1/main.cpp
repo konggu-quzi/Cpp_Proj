@@ -1,41 +1,23 @@
 #include <iostream>
+#include <cstdio>
 
 using namespace std;
-
-class sell_info
-{
-public:
-    sell_info(string name):ProductName(name),data(5)
-    {}
-    void Rose()
-    {
-        nums -= 10;
-    }
-    void Jack()
-    {
-        nums -= 15;
-    }
-    void Jim()
-    {
-        nums -= 13;
-    }
-    void show_nums()
-    {
-        cout << ProductName << " nums:" << nums << endl;
-    }
-    static int nums;
-protected:
-    string ProductName;
-    int data;
-private:
-
+class A{
+    public:
+        A(){p();}
+        virtual void p(){cout<<"A"<<endl;}
+        virtual ~A(){cout<<"~A"<<endl;}
 };
-int sell_info::nums = 100;
-
-int main(int argc, char *argv[])
-{
-    sell_info milk("milk");
-    milk.show_nums();
-
-    return 0;
+class B:public A{
+    public:
+        B(){p();}
+        void p(){cout<<"B"<<endl;}
+        ~B(){cout<<12<<endl;}
+};
+int main(int, char**){
+    int aa = 12,n=5;
+    aa%=(n%2);+6+6+6+6+6+66+6+6+6+6+6+6+690
+    cout<<aa<<endl;
+        A* a=new B();
+        delete a;
 }
