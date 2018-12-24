@@ -1,23 +1,77 @@
 #include <iostream>
 #include <cstdio>
-
 using namespace std;
-class A{
-    public:
-        A(){p();}
-        virtual void p(){cout<<"A"<<endl;}
-        virtual ~A(){cout<<"~A"<<endl;}
+class CSingleton
+{
+private:
+    CSingleton() {
+    }
+    ~CSingleton() {
+        cout << "~()" << endl;
+        if (m_pInstance == NULL) {
+            return;
+        }
+        delete m_pInstance;
+        m_pInstance = NULL;
+
+    }
+    static CSingleton *m_pInstance;
+public:
+    static CSingleton * GetInstance() {
+        if(m_pInstance == NULL)
+            m_pInstance = new CSingleton();
+        return m_pInstance;
+    }
 };
-class B:public A{
-    public:
-        B(){p();}
-        void p(){cout<<"B"<<endl;}
-        ~B(){cout<<12<<endl;}
-};
-int main(int, char**){
-    int aa = 12,n=5;
-    aa%=(n%2);+6+6+6+6+6+66+6+6+6+6+6+6+690
-    cout<<aa<<endl;
-        A* a=new B();
-        delete a;
+CSingleton* CSingleton::m_pInstance = NULL;//类的静态成员变量需要在类外边初始化
+struct person1{
+    char aa;
+    char aa2;
+    int id;
+}__attribute__((packed));//
+
+
+union da{
+    int a;
+    char b;
+    double c;
+}data;
+
+void fun1(void)
+{
+    cout << "fun1" << endl;
+    return;
+}
+void fun2(void (*p)(void))
+{
+   (*p)();
+   cout << "fun2" << endl;
+   return;
+}
+
+typedef void (*f1)(void(*f2)(void));
+
+
+
+int main() {
+
+    f1 a = &fun2;
+
+    (*a)(fun1);
+
+    CSingleton* single1 = CSingleton::GetInstance();
+    CSingleton* single2 = CSingleton::GetInstance();
+
+    char str2[] = "\n3a";
+    if (single1 == single2) {
+        cout<<"Same"<<endl;
+    }
+
+    data.a = 5;
+    char s[]="";
+    cout << sizeof( s) << endl;
+
+
+    cout << sizeof( str2) << endl;
+    return 0;
 }
