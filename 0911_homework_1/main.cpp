@@ -55,6 +55,10 @@ typedef void (*f1)(void(*f2)(void));
 
 int main() {
 
+    int bb=10;
+    int  & const aa = bb;
+    aa = 11;
+//    int &constaa;
     f1 a = &fun2;
 
     (*a)(fun1);
