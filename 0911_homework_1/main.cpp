@@ -51,13 +51,32 @@ void fun2(void (*p)(void))
 
 typedef void (*f1)(void(*f2)(void));
 
-
+class B
+{
+public:
+    virtual void Fun()
+    {
+        cout << "B fun" << endl;
+    }
+};
+class D: public B
+{
+public:
+   void Fun()
+   {
+       cout << "D fun" << endl;
+   }
+};
 
 int main() {
 
+    D dd;
+    B* pb = &dd;
+    D* pd = &dd;
+    pb->Fun();
+    pd->Fun();
+
     int bb=10;
-    int  & const aa = bb;
-    aa = 11;
 //    int &constaa;
     f1 a = &fun2;
 
